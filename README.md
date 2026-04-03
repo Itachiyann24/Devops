@@ -5,3 +5,5 @@ etre professionel
 maitriser mon sujet
 et ensuite passer a l action
 se faire des contacs
+gagner beacoup d argent
+etre en relation avec Dieu
