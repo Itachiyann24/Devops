@@ -1,0 +1,10 @@
+name: Hello DevOps
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message
+        run: echo "Hello DevOps! Un push a ete fait sur main."
