@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Yann Jenner Lemogoun · DevOps & Cybersecurity</title>
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f4f7fc;
+            color: #1a2a3a;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        /* header */
+        .header {
+            background: linear-gradient(135deg, #0b2b3b 0%, #1a4a5f 100%);
+            color: white;
+            border-radius: 2rem;
+            padding: 2rem 2rem 1.8rem 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.25rem;
+        }
+        .header .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+        .contact-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+        .contact-bar a, .contact-bar span {
+            color: white;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.15);
+            padding: 0.3rem 0.9rem;
+            border-radius: 40px;
+            transition: 0.2s;
+        }
+        .contact-bar a:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        /* cards */
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 2rem 0 1rem 0;
+            border-left: 6px solid #1a7f8c;
+            padding-left: 1rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 1.8rem;
+            margin: 1.5rem 0;
+        }
+        .card {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.25s ease;
+            border: 1px solid #e2edf2;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 30px rgba(0,0,0,0.1);
+            border-color: #bdd4db;
+        }
+        .card i {
+            font-size: 2.2rem;
+            color: #1a7f8c;
+            margin-bottom: 0.75rem;
+        }
+        .card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .card p {
+            color: #2c4b5e;
+            margin: 0.75rem 0;
+        }
+        .badge {
+            background: #e0f0f3;
+            color: #145c6e;
+            padding: 0.2rem 0.7rem;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            display: inline-block;
+            margin: 0.5rem 0.3rem 0 0;
+        }
+        .btn-outline {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 1rem;
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            background: transparent;
+            border: 1.5px solid #1a7f8c;
+            color: #1a7f8c;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+        .btn-outline:hover {
+            background: #1a7f8c;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0 1rem;
+            font-size: 0.85rem;
+            color: #4f6f7f;
+            border-top: 1px solid #d0e2e8;
+            margin-top: 2rem;
+        }
+        @media (max-width: 700px) {
+            .header h1 { font-size: 1.8rem; }
+            .container { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Yann Jenner Lemogoun</h1>
+        <div class="tagline">DevOps · Cloud · Cybersecurity (B.Sc. Informatik)</div>
+        <div class="contact-bar">
+            <span><i class="fas fa-map-marker-alt"></i> Kaiserslautern, DE</span>
+            <a href="tel:+4917689280894"><i class="fas fa-phone-alt"></i> +49 176 89280894</a>
+            <a href="mailto:feh08dux@rptu.de"><i class="far fa-envelope"></i> feh08dux@rptu.de</a>
+            <a href="https://github.com/Itachiyann24" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </div>
+
+    <!-- Kurzprofil -->
+    <div class="card" style="background:#eaf4f8; border-radius:1.5rem;">
+        <p style="font-size:1.05rem"><strong>📌 Bachelorand Informatik (Cybersecurity)</strong> – Praktische Erfahrung in Linux-Administration, CI/CD, Docker, KI-Automatisierung. Suche Werkstudentenstelle im Bereich DevOps.</p>
+    </div>
+
+    <!-- Projekte (GitHub + Links) -->
+    <div class="section-title"><i class="fab fa-github" style="margin-right: 8px;"></i> DevOps & Automatisierungs-Projekte</div>
+    <div class="grid" id="projectsGrid">
+        <!-- Die Projekte werden dynamisch mit JavaScript eingefügt (trotzdem voll funktionsfähig) -->
+    </div>
+
+    <!-- Skills & Zertifikate -->
+    <div class="section-title"><i class="fas fa-code"></i> Kernkompetenzen</div>
+    <div class="grid">
+        <div class="card"><i class="fab fa-linux"></i><h3>Linux/Admin</h3><p>Ubuntu, Debian, Bash, SSH, Firewall, Systemd – Serverhärtung & Automatisierung.</p><div><span class="badge">Linux Server</span><span class="badge">Bash Scripting</span></div></div>
+        <div class="card"><i class="fas fa-cogs"></i><h3>CI/CD & DevOps</h3><p>Jenkins, GitHub Actions, GitLab CI, Infrastructure as Code, automatisierte Deployments.</p><div><span class="badge">Jenkins</span><span class="badge">GitHub Actions</span></div></div>
+        <div class="card"><i class="fab fa-docker"></i><h3>Container & Orchestrierung</h3><p>Docker, Docker Compose, Kubernetes (Grundlagen), Rancher, Container-Security.</p><div><span class="badge">Docker</span><span class="badge">K8s</span></div></div>
+        <div class="card"><i class="fas fa-robot"></i><h3>Agentic AI & Automatisierung</h3><p>Prompt-Engineering, LLM-Integration für Code-Gen, Dokumentation & Reporting.</p><div><span class="badge">OpenAI API</span><span class="badge">LangChain</span></div></div>
+    </div>
+
+    <div class="section-title"><i class="fas fa-certificate"></i> Zertifikate & Weiterbildung</div>
+    <div class="grid">
+        <div class="card"><i class="fas fa-check-circle"></i><h3>DevOps Fundamentals</h3><p>CI/CD, Automatisierung, Infrastruktur als Code</p><span class="badge">2025</span></div>
+        <div class="card"><i class="fas fa-check-circle"></i><h3>Essential Linux Training</h3><p>Simplilearn / Coursera – Linux Administration</p><span class="badge">02/2026</span></div>
+        <div class="card"><i class="fas fa-check-circle"></i><h3>Parallel Programming in Java</h3><p>Rice University (Coursera)</p><span class="badge">02/2026</span></div>
+        <div class="card"><i class="fas fa-check-circle"></i><h3>Python / Java Programming</h3><p>Meta + Duke University – Software Engineering Grundlagen</p><span class="badge">2025</span></div>
+    </div>
+
+    <footer>
+        <i class="fas fa-terminal"></i> Linux · Docker · Jenkins · GitHub · KI · Automatisierung — Immer bereit für neue Herausforderungen.
+        <br>© 2026 Yann Jenner Lemogoun – Portfolio mit <i class="fas fa-heart" style="color:#1a7f8c;"></i> gebaut für DevOps-Werkstudent:innen-Tätigkeit.
+    </footer>
+</div>
+
+<script>
+    // Hier werden deine echten GitHub-Repos / Projekte eingetragen (dynamisch, anpassbar)
+    const projects = [
+        {
+            name: "Linux-Server-Härtung & Automatisierung",
+            description: "Bash-Skripte für SSH-Sicherheit, UFW, Fail2ban, automatische Backups und Monitoring. Homelab mit Ubuntu-Servern.",
+            tags: ["Linux", "Bash", "Security", "Homelab"],
+            url: "https://github.com/Itachiyann24/linux-server-automation",
+            icon: "fa-shield-alt"
+        },
+        {
+            name: "Docker-Compose Stack (Web + DB)",
+            description: "Containerisierung einer Webapp mit Nginx + PostgreSQL + Adminer. Inkl. Docker-Compose und Gesundheitschecks.",
+            tags: ["Docker", "Compose", "PostgreSQL", "Nginx"],
+            url: "https://github.com/Itachiyann24/docker-stack-template",
+            icon: "fa-docker"
+        },
+        {
+            name: "CI/CD Pipeline (Jenkins + GitHub)",
+            description: "Automatisierter Deploy einer statischen Seite per Webhook. Pipeline als Code (Jenkinsfile) mit Build-Stages.",
+            tags: ["Jenkins", "Webhook", "Pipeline", "CI/CD"],
+            url: "https://github.com/Itachiyann24/jenkins-pipeline-demo",
+            icon: "fa-code-branch"
+        },
+        {
+            name: "KI-gestützte Code-Generierung",
+            description: "Integration von LLM-APIs für automatisierte Code-Dokumentation und Review-Bots. Prompt-Engineering und OpenAI.",
+            tags: ["Python", "OpenAI", "LLM", "Automation"],
+            url: "https://github.com/Itachiyann24/ai-automation-tools",
+            icon: "fa-robot"
+        },
+        {
+            name: "Portfolio & DevOps Blog (diese Seite)",
+            description: "Responsive Portfolio mit GitHub-Integration, dynamischen Cards und modernem Design – gehostet auf eigenem Ubuntu-Server.",
+            tags: ["HTML/CSS", "Apache", "Linux", "Design"],
+            url: "https://github.com/Itachiyann24/devops-portfolio",
+            icon: "fa-globe"
+        }
+    ];
+
+    const container = document.getElementById('projectsGrid');
+    if (container) {
+        projects.forEach(proj => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.innerHTML = `
+                <i class="fab ${proj.icon || 'fa-github'}"></i>
+                <h3>${proj.name}</h3>
+                <p>${proj.description}</p>
+                <div>${proj.tags.map(t => `<span class="badge">${t}</span>`).join('')}</div>
+                <a href="${proj.url}" target="_blank" class="btn-outline"><i class="fab fa-github"></i> Repository ansehen →</a>
+            `;
+            container.appendChild(card);
+        });
+    }
+</script>
+</body>
+</html>
