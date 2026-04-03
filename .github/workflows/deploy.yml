@@ -18,7 +18,7 @@ jobs:
         with:
           host: ${{ vars.SERVER_HOST }}
           username: ${{ vars.SERVER_USER }}
-          key: ${{ secret.SERVER_SSH_KEY }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
           port: 22
           script: |
             cd /var/www/itachiyann.de/public_html
